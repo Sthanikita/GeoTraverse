@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+}
+img{
+    width:85px;
+    max-width:100%;
+}
+span{
+text-align:center;
+font-family: "Roboto Condensed", sans-serif;
+font-optical-sizing: auto;
+font-weight:800;
+font-style: normal;
+font-size: larger;
+}
+.geo{
+    border:3px solid #BA68C8;
+    width:200px;
+    background-color: #FFE0B2;
+    background-size: 100px;
+
+}
+.navbar{
+background-color:#FFAB91;
+/*border: 1px solid black;*/
+border-radius:11px;
+
+}
+.navbar ul{
+overflow: auto;
+
+}
+.navbar li{
+float:left;/*makes vertical text in horizontal line*/
+list-style:none;
+margin:13px 20px;
+}
+.navbar li a{
+color:#AB47BC;
+padding: 3px 3px;
+text-align:justify;
+font-style:normal;
+text-decoration:none;
+font-family: "Roboto Condensed", sans-serif;
+font-optical-sizing: auto;
+font-weight:800;
+font-style: normal;
+font-size: larger;
+}
+.search{
+color: rgb(34, 71, 233);
+padding: 5px 10px ;
+margin-left:1000px;
+display: flex;
+justify-content: center; /* Center horizontally */
+align-items: center;     /* Center vertically */
+}
+.navbar input{
+border: 2px solid brown;
+border-radius: 5px;
+padding: 6px 20px;
+width:100px
+position:auto;
+}
+footer{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust this height as needed */
+    background-color: #f8f8f8;
+
+}
+.box{
+border:5px;
+width: 200px;
+height:200px;
+}
+#box1{
+background-color:#b2dfdb;
+margin-left:1000px;
+
+}
+button {
+padding: 2px 20px;
+
+font-size: 12px;
+cursor: pointer;
+border: 2px solid #800000;
+border-radius: 5px;
+background-color: transparent;
+font-family: "Roboto Condensed", sans-serif;
+font-optical-sizing: auto;
+font-weight:800;
+font-style: normal;
+color:#9C27B0;
+
+}
+
+
+
+.text{
+padding: 3px 3px;
+text-align:justify;
+font-style:normal;
+text-decoration:none;
+font-family:"Roboto Condensed", sans-serif;
+font-size: larger;
+}
+
+table{
+    width:50%
+
+}
+th, td {
+    padding: 7px;
+    text-align: left;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:800;
+    font-style: normal;
+    font-size: larger;
+    color:#9C27B0;
+}
+tr{
+bgcolor:"white";
+}
+.image img{
+    width: 300px;
+    margin:2%;
+    align-items: center;
+    position: relative;
+    left:500px;
+}
+figcaption{
+    text-align: center;
+}
+
+

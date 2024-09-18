@@ -1,0 +1,43 @@
+
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:larger;
+    font-style: normal;
+}
+input{
+    margin: 4px;
+    padding:4px
+}
+table{
+  
+    width:75%
+}
+table, th, td{
+    border: 1px solid black;
+}
+th, td{
+    padding: 4px;
+    text-align: center;
+}
+thead{
+    margin: 4px;
+}
+h1, h3{
+    text-align: center;
+    text-decoration:underline;
+
+}
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 5px 11px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+img{
+    width:85px;
+    max-width:100%;
+}

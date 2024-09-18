@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traverse</title>
+
+    <!-- Link for font -->
+    <link rel="stylesheet" href="traverse_compstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body style="background-color:#FFF9C4;">
+    <header>
+        <marquee bgcolor="lightblue" direction="right" scrollamount="10">
+            WELCOME TO OFFICIAL PAGE OF GEOTRAVERSE🙏🙏🙏🙏
+        </marquee>
+        <div class="geo">
+            <img src="images (1).jpg" alt="Logo">
+            <span>GeoTraverse</span>
+        </div>
+
+        <nav class="navbar" id="navibar">
+            <ul>
+                <li><a href="#introduction" target="_blank">Home</a></li>
+                <li><a href="process.html" target="_blank">Field Procedure</a></li>
+                <li><a href="Computation form.html" target="_blank">Calculation Form</a></li>
+                <li><a href="Specification.html" target="_blank">Specification</a></li>
+                <li><a href="error.html" target="_blank">Conclusion</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search anything">
+                    <button><a href="signup.html" target="_blank">Sign Up</a></button>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section id="introduction" class="text">
+        <h3>Introduction</h3>
+        <p>A Traverse is a chain of straight lines to be used as a basis for the measurement of details. It is the field operation of measuring the lengths and directions of a series of straight lines connecting a series of points on the earth. Each of these straight lines is called a traverse leg, and each point is called a traverse station.</p>
+        <p>The principle of traversing is that if the direction and length of any line is known then the coordinates of its head (end point) can be found from the coordinates of its tail (starting point). 
+        <ul>
+            <li>Latitude (∆N) = d cosα</li>
+            <li>Departure (∆E) = d sinα</li>
+        </ul>
+        If the coordinate of A is known, then the coordinate of B can be calculated, i.e., E2 = E1 + ∆E and N2 = N1 + ∆N</p>
+        <div class="image">
+            <img src="Screenshot (421).png" alt="Principle of Traverse">
+            <figcaption>Fig: 1 Principle of Traverse</figcaption>
+        </div>
+        <p>The types of traverse are:</p>
+        <ol type="a">
+            <li>Closed Link Traverse</li>
+            <li>Open Link Traverse</li>
+        </ol>
+        <details>
+            <summary>Type of Traverse</summary>
+            <p>a) Closed Linked Traverse<br>
+            It starts either from a known station and ends at the same station or another known station. Closed traverses have more checks and are accurate, as they provide both line and angular checks. There are two kinds of closed traverses:
+            <ol type="a">
+                <li>Closed Loop Traverse</li>
+                <li>Link Traverse</li>
+            </ol>
+            </p>
+            <p>b) Open Linked Traverse<br>
+            It either starts from a known or unknown station and ends at another unknown or known station. It is geometrically and mathematically open. Checks are only possible by additional observation. It has no checks itself and is used in linear alignment, suitable for long, narrow strips.</p>
+        </details>
+
+        <h3>Purpose of Traversing</h3>
+        <p>The purpose of traversing is based on the basic principle of surveying, i.e., working from whole to parts. It is carried out for the following purposes:
+        <ul>
+            <li>To establish control points for chain, compass, PT, topographical, cadastral, and photogrammetric surveys.</li>
+            <li>To establish control points for calculating earthwork quantities.</li>
+            <li>To fix the alignment for different engineering projects when better accuracy is required and for locating control points for railroads, highways, and other construction work.</li>
+            <li>To ascertain the coordinates of boundary pillars.</li>
+            <li>To determine existing boundary lines.</li>
+        </ul>
+        </p>
+    </section>
+
+    <!-- Sign Up Form -->
+    <section id="signup">
+        <h1>Sign Up</h1>
+        <form action="#" method="POST">
+            <div>
+                <label for="email"><b>Email:</b></label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+            </div>
+            <br>
+            <div>
+                <label for="Name"><b>Name:</b></label>
+                <input type="text" name="Name" id="Name" placeholder="Enter Name" required>
+            </div>
+            <br>
+            <div>
+                <label for="Surname"><b>Surname:</b></label>
+                <input type="text" name="Surname" id="Surname" placeholder="Enter Surname" required>
+            </div>
+            <br>
+            <div>
+                <label for="Password"><b>Password:</b></label>
+                <input type="password" name="password" id="Password" placeholder="Enter Password" required>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Submit Now">
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="box" id="box1">
+            <b>Any Questions?</b>
+            <br>
+            <form id="questionForm" action="#" method="POST">
+                <textarea name="user_question" placeholder="Clear your doubts" cols="30" rows="5"></textarea>
+                <br>
+                <input type="submit" value="Submit Now">
+                <input type="reset" value="Reset Now">
+            </form>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to handle form submission
+        document.getElementById('questionForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevent form from submitting and refreshing the page
+            alert('Thank you for your question!');  // Display thank you message
+            this.reset();  // Reset the form after submission
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traverse Computation Form</title>
+    <link rel="stylesheet" href="Traverseformstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        div, button {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: larger;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body style="background-color:#ffffc4;">
+    <header>
+        <marquee bgcolor="lightblue" direction="right" scrollamount="10">
+            WELCOME TO OFFICIAL PAGE OF GEOTRAVERSE🙏🙏🙏🙏
+        </marquee>
+    </header>
+    <h1>Traverse Computation Form</h1>
+    <div class="container">
+        <form id="traverseForm">
+            <h3>Interior Angle Computation</h3>
+          
+            <label for="measuredAngles"><b>Enter the Interior Angles (comma-separated)</b></label>
+            <input type="text" id="measuredAngles" placeholder="Enter angles in degrees">
+            <br><br>
+            <label for="numLegs"><b>Number of Legs</b></label>
+            <input type="number" id="numLegs" value="7" min="2" required>
+            <button type="button" id="updateButton">Update Table</button>
+            <br><br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Leg</th>
+                        <th>Distance (d)</th>
+                        <th>Bearing (β)</th>
+                    </tr>
+                </thead>
+                <tbody id="legBody">
+                </tbody>
+            </table>
+            <br>
+            <div>
+                <label for="initialE"><b>Initial Easting</b></label>
+                <input type="number" id="initialE" step="any" required>
+                <label for="initialN"><b>Initial Northing</b></label>
+                <input type="number" id="initialN" step="any" required>
+                <label for="initialRL"><b>Initial Reduced Level (RL)</b></label>
+                <input type="number" id="initialRL" step="any" required>
+            </div>
+            <br>
+            <div>
+                <label for="heightOfInstrument"><b>Height of Instrument</b></label>
+                <input type="number" id="heightOfInstrument" step="any" required>
+                <label for="targetHeight"><b>Target Height</b></label>
+                <input type="number" id="targetHeight" step="any" required>
+            </div>
+            <br>
+            <div>
+                <button type="submit">Compute Now</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+        <hr>
+        <div id="results">
+            <h3>Result</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Station</th>
+                        <th>Corrected Easting</th>
+                        <th>Corrected Northing</th>
+                        <th>Corrected Reduced Level</th>
+                    </tr>
+                </thead>
+                <tbody id="resultBody"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
